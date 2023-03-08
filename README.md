@@ -17,7 +17,7 @@ gotmpl render --tmpl ./template.tmpl --data ./data.json > ./output.txt
 ### Homebrew
 
 ```bash
-brew install hay-kot/tap/gotmpl
+brew install hay-kot/gotmpl-tap/gotmpl
 ```
 
 ### Go
