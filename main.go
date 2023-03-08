@@ -31,7 +31,7 @@ func main() {
 	ctrl := &commands.Controller{}
 
 	app := &cli.App{
-		Name:    "tmpl-cli",
+		Name:    "gotmpl",
 		Usage:   "Tiny CLI template engine for generating files quickly",
 		Version: build(),
 		Flags: []cli.Flag{
@@ -87,6 +87,6 @@ func main() {
 	}
 
 	if err := app.Run(os.Args); err != nil {
-		log.Fatal().Err(err).Msg("failed to run tmpl-cli")
+		log.Fatal().Err(err).Msg("failed to run gotmpl")
 	}
 }
