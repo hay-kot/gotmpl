@@ -69,12 +69,14 @@ func main() {
 				Flags: []cli.Flag{
 					&cli.PathFlag{
 						Name:        "template",
+						Aliases:     []string{"tmpl", "t"},
 						Usage:       "template file",
 						Required:    true,
 						Destination: &ctrl.Template,
 					},
 					&cli.PathFlag{
 						Name:        "data",
+						Aliases:     []string{"d"},
 						Usage:       "data file",
 						Required:    true,
 						Destination: &ctrl.DataFile,
